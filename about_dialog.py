@@ -183,11 +183,11 @@ class AboutDialog(QDialog):
         self._update_card_size()
 
     # ---------------------------------------------------------
-    #  Helper: cari KPU.png
+    #  Helper: cari Simpati.png
     # ---------------------------------------------------------
     def _find_logo_path(self) -> str | None:
         here = os.path.dirname(os.path.abspath(__file__))
-        candidate1 = os.path.join(here, "KPU.png")
+        candidate1 = os.path.join(here, "Simpati.png")
         if os.path.exists(candidate1):
             return candidate1
         return None
