@@ -88,8 +88,8 @@ class AboutDialog(QDialog):
             pixmap = QPixmap(logo_path)
             if not pixmap.isNull():
                 pixmap = pixmap.scaled(
-                    140,
-                    140,
+                    280,
+                    280,
                     Qt.AspectRatioMode.KeepAspectRatio,
                     Qt.TransformationMode.SmoothTransformation,
                 )
@@ -103,21 +103,21 @@ class AboutDialog(QDialog):
         card_layout.addWidget(logo_label)
 
         # ==== TEKS UTAMA ====
-        title_line1 = QLabel("KOMISI PEMILIHAN UMUM", self.card)
-        title_line1.setObjectName("titleLine1")
-        title_line1.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        #title_line1 = QLabel("KOMISI PEMILIHAN UMUM", self.card)
+        #title_line1.setObjectName("titleLine1")
+        #title_line1.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
-        title_line2 = QLabel("KABUPATEN TASIKMALAYA", self.card)
-        title_line2.setObjectName("titleLine2")
-        title_line2.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        #title_line2 = QLabel("KABUPATEN TASIKMALAYA", self.card)
+        #title_line2.setObjectName("titleLine2")
+        #title_line2.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
-        card_layout.addWidget(title_line1)
-        card_layout.addWidget(title_line2)
+        #card_layout.addWidget(title_line1)
+        #card_layout.addWidget(title_line2)
 
-        separator = QFrame(self.card)
-        separator.setFrameShape(QFrame.Shape.HLine)
-        separator.setFrameShadow(QFrame.Shadow.Sunken)
-        card_layout.addWidget(separator)
+        #separator = QFrame(self.card)
+        #separator.setFrameShape(QFrame.Shape.HLine)
+        #separator.setFrameShadow(QFrame.Shadow.Sunken)
+        #card_layout.addWidget(separator)
 
         # ==== DESKRIPSI APLIKASI ====
         desc = QLabel(self.card)
@@ -125,8 +125,7 @@ class AboutDialog(QDialog):
         desc.setAlignment(Qt.AlignmentFlag.AlignCenter)
         desc.setObjectName("descLabel")
         desc.setText(
-            "SIMPATI — Sistem Informasi Pemutakhiran Data Pemilih\n"
-            "Sistem Pengelolaan Data Pemilih\n"
+            "Sistem Manajemen Data Pemilih\n"
             "untuk mendukung tahapan pemutakhiran data pemilih\n"
             "bagi PPS di lingkungan KPU Kabupaten Tasikmalaya."
         )
